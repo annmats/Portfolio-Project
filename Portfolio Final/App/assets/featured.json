@@ -1,0 +1,35 @@
+{
+    "status": 200,
+    "books": [
+        {
+            "id": 1,
+            "image": "prince.jpg",
+            "category": "The Little Prince",
+            "href": "classics.html"
+        },
+        {
+            "id": 2,
+            "image": "women.jpg",
+            "category": "Little Women",
+            "href": "classics.html"
+        },
+        {
+            "id": 3,
+            "image": "safe.jpg",
+            "category": "Safe Haven",
+            "href": "romance.html"
+        },
+        {
+            "id": 4,
+            "image": "lotr.jpg",
+            "category": "Lord of the Rings",
+            "href": "fantasy.html"
+        },
+        {
+            "id": 5,
+            "image": "dune.jpg",
+            "category": "Dune",
+            "href": "science_fiction.html"
+        }
+    ]
+}

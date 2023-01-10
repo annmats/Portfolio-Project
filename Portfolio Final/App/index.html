@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online BookStore</title>
+    <link rel="icon" href="img/book.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cart-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="form-login active">
+      <div class="login-wrapper">
+        <div class="login-container">
+          <div id="login-text">
+            <p id="online-text">ONLINE</p>
+            <p id="bookstore-text">LIBRARY</p>
+            <p id="aboutus-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laboriosam culpa cupiditate error explicabo sint expedita earum
+              ipsum eveniet, voluptate officiis.
+            </p>
+          </div>
+        </div>
+        <div class="login-container">
+          <form action="">
+            <div class="form-input">
+              <h1 id="form-login-text">Login</h1>
+              <h4 class="message"></h4>
+            </div>
+            <div class="form-input">
+              <label>Username:</label>
+              <input
+                class="input-fields"
+                type="text"
+                name="username"
+                id="username"
+                placeholder=""
+              />
+            </div>
+            <div class="form-input">
+              <label>Password:</label>
+              <input
+                class="input-fields"
+                type="password"
+                name="password"
+                id="password"
+              />
+            </div>
+            <div class="form-input">
+              <input id="btn-login" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="homepage inactive">
+      <!--Navigation Bar-->
+      <nav class="flex">
+        <div class="nav-container">
+          <ul class="flex justify_align left">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a id="categories" href="#">Ebooks</a>
+              <div class="dropdown-content">
+                <a href="classics.html">Classics</a>
+                <a href="romance.html">Romance</a>
+                <a href="fantasy.html">Fantasy</a>
+                <a href="science_fiction.html">Science Fiction</a>
+              </div>
+            </li>
+            <li><a href="bookshop.html">BookShop</a></li>
+          </ul>
+        </div>
+        <div class="nav-container right">
+          <ul class="flex right">
+            <li><a class="logout" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Sliding Images-->
+      <div class="home slideshow-container">
+        <div class="slides fade">
+          <img src="img/book_bg1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="slides fade">
+          <img src="img/book_bg2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="slides fade">
+          <img src="img/book_bg3.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!--Featured Books-->
+      <div class="featured-text">
+        <h2>Featured Books</h2>
+      </div>
+      <div class="featuredbooks-maincontainer flex"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="addtocart.js"></script>
+  </body>
+</html>

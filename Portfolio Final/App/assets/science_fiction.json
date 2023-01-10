@@ -1,0 +1,77 @@
+{
+    "status": 200,
+    "books": [
+        {
+            "id": 1,
+            "title": "Flowers For Algernon",
+            "author": "Daniel Keyes",
+            "synopsis": "Charlie Gordon, IQ 68, is a floor sweeper and the gentle butt of everyone's jokes - until an experiment in the enhancement of human intelligence turns him into a genius.",
+            "price": "579.06",
+            "image": "algernon.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 2,
+            "title": "Ubik",
+            "author": " Philip K Dick",
+            "synopsis": "A classic science fiction tale of artifical worlds by one of the great American writers of the 20th century.",
+            "price": "566.05",
+            "image": "ubik.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 3,
+            "title": "The Sirens Of Titan",
+            "author": " Kurt Vonnegut",
+            "synopsis": "A deep and meaningful masterpiece of science fiction, full of heart and mind-bending ideas.",
+            "price": "475.34",
+            "image": "sirens.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 4,
+            "title": "The Forever War",
+            "author": "Joe Haldeman",
+            "synopsis": "One of the very best science fiction novels of all time. An intelligent and thought provoking allegory for the Vietnam War.",
+            "price": "589.85 ",
+            "image": "forever.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 5,
+            "title": "The Kraken Wakes",
+            "author": "John Wyndham",
+            "synopsis": "It started with fireballs raining down from the sky and crashing into the oceans' deeps.",
+            "price": "666.83",
+            "image": "kraken.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 6,
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "synopsis": "The Duke of Atreides has been manoeuvred by his arch-enemy, Baron Harkonnen, into administering the desert planet of Dune.",
+            "price": "1,039.68",
+            "image": "dune.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 7,
+            "title": "The Seeds of Time",
+            "author": "John Wyndham",
+            "synopsis": "One of the few authors whose compulsive readability is a compliment to the intelligence.",
+            "price": "683.70",
+            "image": "seeds.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 8,
+            "title": "Trouble with Lichen",
+            "author": "John Wyndham",
+            "synopsis": "As each scientist wrestles with the implications and practicalities of exploiting the discovery, the world comes ever closer to learning the truth.",
+            "price": "652.42",
+            "image": "lichen.jpg",
+            "pdf": "ml312raa.pdf"
+        }
+    ]
+}

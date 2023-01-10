@@ -1,0 +1,77 @@
+{
+    "status": 200,
+    "books": [
+        {
+            "id": 1,
+            "title": "The Little Prince",
+            "author": "Antoine de Saint-Exupery",
+            "synopsis": "It is the story of an airman's discovery, in the desert, of a small boy from another planet and his stories of intergalactic travel.",
+            "price": "299.71",
+            "image": "prince.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 2,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald", 
+            "synopsis": "The Great Gatsby is a consummate summary of the 'roaring twenties', and a devastating expose of the 'Jazz Age'.",
+            "price": "312.28",
+            "image": "gatsby.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 3,
+            "title": "The Handmaid's Tale",
+            "author": "Margaret Atwood",
+            "synopsis": "Discover the dystopian novel that started a phenomenon before you read the Booker Prize-winning sequel The Testaments.",
+            "price": "684.45",
+            "image": "handmaid.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 4,
+            "title": "The Song of Achilles",
+            "author": "Madeline Miller",
+            "synopsis": "Patroclus, an awkward young prince, has been exiled to the court of King Peleus and his perfect son Achilles. Despite their differences, Achilles befriends the shamed prince.",
+            "price": "736.82",
+            "image": "achilles.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 5,
+            "title": "Winnie-the-Pooh",
+            "author": "A. A. Milne",
+            "synopsis": "These characters and their stories are timeless treasures of childhood that continue to speak to all of us with the kind of freshness and heart that distinguishes true storytelling.",
+            "price": "532.68",
+            "image": "winnie.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 6,
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "synopsis": "Huxley's ingenious fantasy of the future sheds a blazing light on the present and is considered to be his most enduring masterpiece.",
+            "price": "615.11",
+            "image": "brave.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 7,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "synopsis": "When Elizabeth Bennet meets Mr Darcy, she is repelled by his overbearing pride and prejudice towards her family.",
+            "price": "701.77",
+            "image": "pride.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 8,
+            "title": "Little Women",
+            "author": "Louisa May Alcott",
+            "synopsis": "Grown-up Meg, tomboyish Jo, timid Beth, and precocious Amy, the four March sisters.",
+            "price": "1,087.66",
+            "image": "women.jpg",
+            "pdf": "ml312raa.pdf"
+        }
+    ]
+}

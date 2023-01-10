@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica";
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background: url(img/body_bg.jpg);
+    background-position: center;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+.form-login {
+    background: url();
+    height: 100vh;
+    background-image: url(img/log_in_img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px
+}
+
+.login-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#login-text {
+    width: 50%;;
+}
+
+#online-text {
+    font-size: 50px;
+    color: #673AB7;
+}
+
+#bookstore-text, #form-login-text {
+    font-size: 50px;
+    color: #26A69A;
+    margin-top: 0;
+}
+
+#aboutus-text {
+    color: #9575CD;
+    font-size: 15px;
+}
+
+form {
+    padding: 20px;
+    text-align: center;
+    color: #673AB7;
+}
+
+.form-input {
+    padding: 10px 0;
+    
+}
+
+.input-fields {
+    height: 30px;
+    width: 200px;
+    border: 1px solid #673AB7;
+    border-radius: 10px;
+    text-indent: 8px;
+}
+
+#btn-login {
+    font-size: 15px;
+    color: #009688;
+    padding: 10px;
+    border: none;
+}
+
+#btn-login:hover {
+    opacity: 50%;
+}
+
+
+/*Navigation Bar*/
+nav {
+    width: 100vw;
+}
+
+.nav-container {
+    width: 50%;
+    display: flex;
+    align-items: center
+}
+
+.flex {
+    display: flex;
+}
+
+.justify_align {
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    justify-content: left;
+}
+
+.right {
+    justify-content: right;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+ul li a, #featured-href{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+ul li:hover {
+    background-color: #B39DDB;
+}
+
+ul li img {
+    width: 10%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: #B39DDB;
+    z-index: 2;
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 10px 0;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    opacity: 50%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#addcart {
+    color: #B71C1C;
+    font-weight: bold;
+}
+
+/*Slideshow images*/
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.inaction {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+.featured-text {
+    height: 10vh;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 50px;
+    padding: 20px;
+    color: #26A69A;
+}
+
+.featuredbooks-maincontainer {
+    width: 100vw;
+    height: 35vh;
+}
+
+.featuredbook-container {
+    height: 35vh;
+    width: 20vw;
+    display: block;
+}
+
+.featuredbook-mini {
+    height: 50%;
+}
+
+#featured-category {
+    display: flex;
+    justify-content: center;
+}
+
+#featured-img {
+    height: 150px;
+}
+
+#featured-img:hover {
+    transform: scale(1.5);
+}
+
+#featured-href {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#featured-href:hover {
+    color: #009688;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 1224px) { 
+    .slideshow-container {
+        height: fit-content;
+    }
+}

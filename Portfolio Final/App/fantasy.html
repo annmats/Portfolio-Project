@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classics</title>
+    <link rel="icon" href="img/book.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="flex">
+      <div class="nav-container">
+        <ul class="flex justify_align left">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a id="categories" href="#">Ebooks</a>
+            <div class="dropdown-content">
+              <a href="classics.html">Classics</a>
+              <a href="romance.html">Romance</a>
+              <a href="fantasy.html">Fantasy</a>
+              <a href="science_fiction.html">Science Fiction</a>
+            </div>
+          </li>
+          <li><a href="bookshop.html">BookShop</a></li>
+        </ul>
+      </div>
+      <div class="nav-container right">
+        <ul class="flex right">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Bestseller page-->
+    <div class="ebook-text">
+      <h1>Fantasy</h1>
+      <!--Change Here-->
+    </div>
+
+    <!--Bestseller side bar images and main content-->
+    <div class="bestseller-container flex">
+      <div class="side-bar"></div>
+      <div class="main-content">
+        <div id="first-row" class="bestsellers-row up flex"></div>
+        <div id="second-row" class="bestsellers-row down flex"></div>
+      </div>
+      <div class="side-bar"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: "assets/fantasy.json", //Change Here
+          type: "GET",
+          success: function (response) {
+            if (parseInt(response.status) == 200) {
+              const books = response.books;
+              let column1 = "";
+              let column2 = "";
+              for (let i = 0; i <= 3; i++) {
+                column1 = `${column1}<div class="bestsellers-column">`;
+                column1 = `${column1}<div class="bestseller-mini">`;
+                column1 = `${column1}<div class="flex">`;
+                column1 = `${column1}<p class="font-20">${books[i].id}.</p>`;
+                column1 = `${column1}<div class="flex justify_align">`;
+                column1 = `${column1}<img id="book-img" src="img/fantasy/${books[i].image}">`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}<p id="title" class="font-20">${books[i].title}</p>`;
+                column1 = `${column1}<p id="author">${books[i].author}</p>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}<div class="bestseller-mini">`;
+                column1 = `${column1}<p id="synopsis">${books[i].synopsis}</p>`;
+                column1 = `${column1}<a id="btn-download" href="pdf/${books[i].pdf}" download><i class="fa fa-download"></i> Download PDF</a>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}</div>`;
+              }
+              $("#first-row").append(column1);
+
+              for (let i = 4; i < books.length; i++) {
+                column2 = `${column2}<div class="bestsellers-column">`;
+                column2 = `${column2}<div class="bestseller-mini">`;
+                column2 = `${column2}<div class="flex">`;
+                column2 = `${column2}<p class="font-20">${books[i].id}.</p>`;
+                column2 = `${column2}<div class="flex justify_align">`;
+                column2 = `${column2}<img id="book-img" src="img/fantasy/${books[i].image}">`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}<p id="title" class="font-20">${books[i].title}</p>`;
+                column2 = `${column2}<p id="author">${books[i].author}</p>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}<div class="bestseller-mini">`;
+                column2 = `${column2}<p id="synopsis">${books[i].synopsis}</p>`;
+                column2 = `${column2}<a id="btn-download" href="pdf/${books[i].pdf}" download><i class="fa fa-download"></i> Download PDF</a>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}</div>`;
+              }
+              $("#second-row").append(column2);
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

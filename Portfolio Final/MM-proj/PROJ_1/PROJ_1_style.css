@@ -1,0 +1,91 @@
+body, html {
+    background-image: url("img/wallpaper.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans';
+}
+
+ul {
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.parag {
+    margin-top: none;
+}
+
+p {
+    padding: 10;
+    text-align: center;
+}
+
+.join-us {
+    display: flex;
+    justify-content: center;
+}
+
+.button-join {
+    background: transparent;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.button-join:hover {
+    background-color: lightgrey;
+    border: none;
+}

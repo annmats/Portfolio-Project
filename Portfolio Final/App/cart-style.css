@@ -1,0 +1,92 @@
+div#add-cart-container {
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+    max-height: auto;
+    min-height: 50vh;
+    height: 60%;
+    padding: 0;
+    position: fixed;
+    right: 0%;
+    transition: all .5s;
+    width: 30%;
+    z-index: 2;
+}
+div#add-cart-container div.modaltopContent {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    padding: 20px 15px;
+}
+table {
+    border-collapse: collapse;
+    caption-side: bottom;
+    min-width: 100%;
+    margin: auto;
+}
+table thead {
+    vertical-align: bottom;
+}
+th {
+    text-align: inherit;
+    padding: 5px 15px;
+    min-width: 230px;
+}
+
+.modalFooter {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 85%;
+    width: 100%;
+}
+.modalFooter .leftFooter {
+    align-items: flex-start;
+    display: flex;
+    flex: 90% 1;
+    font-size: 22px;
+    margin-left: 20px;
+    padding: 20px;
+}
+.modalFooter .rightFooter {
+    flex: 30% 1;
+}
+.modalFooter .btncon {
+    background-color: #333;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: inset 0 0 0 0 #8ec63f;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 10px;
+    outline: none;
+    padding: 8px;
+    transition: .4s ease-out;
+    width: 80px;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+}
+.confirmed-order {
+    height: 100vh;
+    background-image: url(img/log_in_img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+.receipt {
+    display: flex;
+    justify-content: space-between;
+}

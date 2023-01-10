@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+}
+
+.first-body {
+    font-family: 'Helvetica';
+}
+
+ul {
+    display: flex;
+    padding-left: 10px;
+    height: 79px;
+    background-color: rgba(34, 34, 34, 1);
+
+}
+
+li {
+    list-style-type: none;  
+}
+
+
+li:active{
+    opacity: 0.7;
+}
+
+a {
+    font-weight: 700;
+    font-style: bold;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 30px;
+    padding-bottom: 31px;;
+    
+}
+a:hover {
+    background-color: white;
+    color:rgba(34, 34, 34, 1);
+    transition: 0.15s;
+}
+
+.sign-in-container {
+    margin-left: 10px;
+    padding-top: 101px;
+    padding-left: 22px; 
+}
+
+.sign-one {
+    cursor: default;
+    width: 134px;
+    height: 46px;
+    font-style: bold;
+    font-size: 40px;
+    font: rgba(34, 34, 34, 1);
+}
+
+.input {
+    margin-top: 16px;
+    width: 366px;
+    height: 49px;
+    border: solid 1px rgba(34, 34, 34, 1);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    text-indent: 11px;
+}
+
+.input-placeholder {
+    color: rgba(176, 176, 176, 1);
+}
+
+.submit {
+    margin-top: 16px;
+}
+
+.submit-button {
+    cursor: pointer;
+    width: 118px;
+    height: 46px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(34, 34, 34, 1);
+    font-weight: 700;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 1);
+    transition: 0.15s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.second-body {
+    font-family: 'Open Sans', sans-serif;
+}
+.upper-container {
+    margin-left: 100px;
+    margin-right: 130px;
+    display: flex;
+    box-sizing: 100%;
+}
+
+.sign-two {
+    font-style: bold;
+    font-size: 48px;
+    line-height: 65px;
+    width: 197px;
+    color: rgba(68, 68, 68, 1);
+    margin-bottom: 20px;
+    cursor: default;
+    padding-right: 161px;
+}
+
+.sub-input {
+    width: 352px;
+    height: 47px;
+    margin-bottom: 14px;
+    border: solid 1px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    text-indent: 17px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.create-account {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(209, 51, 17, 1);
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    width: 358px;
+    transition: 0.15s;
+}
+
+.sub-sign-in {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(34, 34, 34, 1);
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    width: 358px;
+    transition: 0.15s;
+}
+
+.register-container {
+    width: 50%;
+    padding-top: 58px;
+    padding-bottom: 71.96px;
+}
+
+.sign-container {
+    width: 50%;
+    padding-top: 58px;
+    padding-bottom: 71.96px;
+}
+
+.lower-container {
+    margin-left: 100px;
+    margin-right: 130px;
+    padding: 51px 0;
+}
+
+hr {
+    margin-left: 100px;
+    margin-right: 130px;
+    border: solid 1px rgba(181, 181, 181, 1);
+    
+}
+
+.about-title {
+    font-size: 48px;
+    line-height: 65px;
+    max-width: 651px;
+    color: rgba(34, 34, 34, 1);
+    cursor: default;
+    }
+
+.author {
+    color: rgba(190, 190, 190, 1);
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 700;
+    width: 118px;
+    height: 22px;
+    padding-bottom: 30px;
+    cursor: default;
+}
+
+.about-p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: rgba(134, 134, 134, 1);
+    padding-bottom: 32px;
+    cursor: default;
+}
+
+.learn-more-button {
+    margin-right: 5px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-right: 24px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(163, 163, 163, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.back-home-button {
+    margin-right: 5px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-right: 24px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(163, 163, 163, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+span {
+    display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .upper-container {
+        display: block;
+    }
+    
+}

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans';
+}
+
+section#banner {
+    background-image: url(img/image.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+section#banner .wrapper {
+    text-align: center;
+    padding: 100px;
+    color: gainsboro;
+}
+
+section#banner .wrapper .banner-title {
+    font-size: 90px;
+}
+
+section#banner .wrapper .banner-description {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+section#services {
+    padding: 20px;
+    margin: 90px 50px;
+}
+
+section#services .service-description {
+    text-align: center;
+    font-size: 30px;
+}
+
+section#services .services-offered {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section#services .services-offered .sub-container {
+    display: flex;
+}
+
+section#services .services-offered .sub-container .container-services {
+    text-align: center;
+}
+
+section#services .services-offered .sub-container .container-services a {
+    text-decoration: none;
+}
+
+section#services .services-offered .sub-container .container-services .icon img {
+    width: 30%;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+section#services .services-offered .sub-container .container-services .icon-description {
+    margin-top: 10px;
+    color: black;
+}
+
+section#samples {
+    padding: 100px 200px;
+    background-color: #f2f2f2;
+}
+
+section#samples .samples-wrapper {
+    display: flex;
+}
+
+section#samples .samples-wrapper .sample-image {
+    text-align: center;
+}
+
+section#samples .samples-wrapper .sample-image img {
+    width: 75%;
+}
+
+.sample-image img:hover {
+    filter: grayscale(50%);
+}
+
+section#samples .samples-wrapper .sample-description .sample-description-title {
+    font-size: 20px;
+}
+
+section#samples .samples-wrapper .sample-description .sample-description-titledes {
+    font-size: 15px;
+    padding-right: 100px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+@media  screen and (max-width: 1400px) {
+    section#banner {
+        height: 300px;
+    }
+    section#banner .wrapper .banner-title {
+        font-size: 70px;
+    }
+    section#banner .wrapper .banner-description {
+        font-size: 30px;
+    }
+    section#samples .samples-wrapper .sample-image img {
+        width: 80%;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-titledes {
+        padding-right: 0;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    section#banner {
+        height: 300px;
+    }
+    section#banner .wrapper .banner-title {
+        font-size: 50px;
+    }
+    section#banner .wrapper .banner-description {
+        font-size: 20px;
+    }
+    section#services {
+        padding: 20px;
+        margin: 50px 50px;
+    }
+    section#services .services-offered {
+        padding: 30px;
+    }
+    section#samples {
+        padding: 50px;
+    }
+    section#samples .samples-wrapper {
+        display: block;
+    }
+    section#services .services-offered .sub-container .container-services .icon img {
+        width: 30%;
+    }
+    section#samples .samples-wrapper .sample-image img {
+        width: 50%;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-titledes {
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+
+@media  screen and (max-width: 779px) {
+    section#banner {
+        height: 200px;
+    }
+    section#banner .wrapper .banner-title {
+        font-size:30px;
+    }
+    section#banner .wrapper .banner-description {
+        font-size: 15px;
+    }
+    section#banner .wrapper {
+        padding: 50px;
+    }
+    section#services {
+        padding: 20px;
+        margin: 30px 50px;
+    }
+    section#services .service-description {
+        font-size: 15px;
+    }
+    section#services .services-offered {
+        padding: 0
+    }
+    section#services .services-offered .sub-container .container-services .icon-description {
+        font-size: 13px;
+    }
+    section#samples {
+        padding: 20px;
+    }
+    section#samples .samples-wrapper .sample-image img {
+        width: 50%;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-title {
+        font-size: 15px;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-titledes {
+        font-size: 13px;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    section#banner .wrapper .banner-title {
+        font-size: 25px;
+    }
+    section#banner .wrapper .banner-description {
+        font-size: 15px;
+    }
+    section#services {
+        margin: 20px 0;
+    }
+    section#services .service-description {
+        font-size: 15px;
+    }
+    section#services .services-offered {
+        display: block;
+    }
+    section#services .services-offered .sub-container .container-services {
+        padding: 10px;
+    }
+    section#services .services-offered .sub-container .container-services .icon img {
+        width: 40%;
+    }
+    section#services .services-offered .sub-container .container-services .icon-description {
+        font-size: 10px;
+    }
+    section#samples .samples-wrapper .sample-description .sample-description-titledes {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media  screen and (max-width: 384px) {
+        section#samples .samples-wrapper .sample-image img {
+        width: 70%;
+    }
+}

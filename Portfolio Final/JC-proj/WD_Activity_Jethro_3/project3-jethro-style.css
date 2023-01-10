@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section#banner {
+    background-image: url("https://wallpaperaccess.com/full/4215922.jpg");
+    background-size: cover;
+    background-position: 0 12%;
+    cursor: default;
+}
+
+section#banner div#banner-title {
+    color: white;
+    max-width: 665px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+section#banner div#banner-title div#title {
+    max-width: max-content;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 51px;
+    line-height: 51px; 
+}
+
+section#banner div#banner-title div.subtitle {
+    max-width: max-content;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+section#midsection div#midsection-blocks {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    cursor: default;
+}
+
+section#midsection div.midsection-subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    max-width: max-content;
+    width:100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section#midsection div.midsection-contents {
+    display: flex;
+    margin: 10px auto;
+}
+
+section#midsection div.midsection-contents div.content {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+section#midsection div.midsection-contents div.content:hover {
+    color: white;
+    background-color: black;
+    transition: 0.25s;
+}
+
+section#midsection div.midsection-contents div.empty {
+    width: 50%;
+    margin: 0 auto;
+}
+
+section#midsection div.midsection-contents div.content div.content-icon {
+    max-width: 60px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+i {
+    cursor: pointer;
+}
+
+.content-icon:hover {
+    transform: scale(1.3);
+    transition: 0.15s;
+}
+
+section#midsection div.midsection-contents div.content div.content-p {
+    font-size: 19px;
+    font-weight: 550;
+    max-width: 255.99px;
+    width: 100%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+section#bottom-section {
+    background-color: rgb(245, 245, 245);
+}
+
+section#bottom-section div#bottom-section-blocks {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: default;
+}
+
+section#bottom-section div#bottom-section-blocks div.attachment {
+    width: 50%;
+    margin: 100px auto;
+    padding: 80px;
+}
+
+section#bottom-section div#bottom-section-blocks div.attachment div.attachment-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+section#bottom-section div#bottom-section-blocks div.attachment div.attachment-sub {
+    font-size: 22px;
+    line-height: 50px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    section#midsection div#midsection-blocks {
+        padding: 40px 0;
+    }
+    section#midsection div.midsection-contents {
+        display: block;
+    }
+    section#midsection div.midsection-contents div.content {
+        margin: 50px auto;
+        width: 254px;
+        padding: 10px 10px;
+    }
+    section#bottom-section div#bottom-section-blocks {
+        display: block;
+    }
+    section#bottom-section div#bottom-section-blocks div.attachment {
+        margin: 10px auto;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {  
+    body {
+        padding: 0;
+    }
+}

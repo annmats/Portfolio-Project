@@ -1,0 +1,77 @@
+{
+    "status": 200,
+    "books": [
+        {
+            "id": 1,
+            "title": "Simply Irresistible",
+            "author": "Jill Shalvis",
+            "synopsis": "Starting over won't be easy. Yet Maddie sees the potential for a new home and a new career.",
+            "price": "603.32",
+            "image": "simply.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 2,
+            "title": "Virgin River",
+            "author": "Robyn Carr",
+            "synopsis": "When recently widowed Melinda Monroe sees an advert for a midwife in the remote town of Virgin River, she decides this is the perfect place to escape her heartache.",
+            "price": "732.71",
+            "image": "virgin.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 3,
+            "title": "Dance Away with Me",
+            "author": "Susan Elizabeth Phillips",
+            "synopsis": "In running away to this new life, Tess wonders- Has she lost herself . . . or has she found her future?",
+            "price": "632.80",
+            "image": "dance.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 4,
+            "title": "Safe Haven",
+            "author": "Nicholas Sparks",
+            "synopsis": "Love hurts. There is nothing as painful as heartbreak. But in order to learn to love again you must learn to trust again.",
+            "price": "630.84",
+            "image": "safe.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 5,
+            "title": "Sweet Dreams",
+            "author": "Kristen Ashley",
+            "synopsis": "After leaving her cheating husband, Lauren moves to Carnal, Colorado, and gets a job as a waitress in a biker bar called Bubba's.",
+            "price": "774.34",
+            "image": "sweet.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 6,
+            "title": "Love on the Brain",
+            "author": "Ali Hazelwood",
+            "synopsis": "A new STEMinist rom-com in which a scientist is forced to work on a project with her nemesis - with explosive results.",
+            "price": "606.90",
+            "image": "love.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 7,
+            "title": "Mr. Wrong Number",
+            "author": "Lynn Painter",
+            "synopsis": "Things get textual when a steamy message from a random wrong number turns into an anonymous relationship in this hilarious rom-com by Lynn Painter.",
+            "price": "1,061.29",
+            "image": "mr.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 8,
+            "title": "Book Lovers",
+            "author": "Emily Henry",
+            "synopsis": "An insightful, delightful, instant #1 New York Times bestseller from the author of Beach Read and People We Meet on Vacation.",
+            "price": " 764.27",
+            "image": "book.jpg",
+            "pdf": "ml312raa.pdf"
+        }
+    ]
+}

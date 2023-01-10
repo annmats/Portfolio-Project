@@ -1,0 +1,77 @@
+{
+    "status": 200,
+    "books": [
+        {
+            "id": 1,
+            "title": "Harry Potter Box Set",
+            "author": "J. K. Rowling",
+            "synopsis": "One of the greatest literary adventures of modern times.",
+            "price": "4,932.64",
+            "image": "hp.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 2,
+            "title": "The Hobbit & The Lord of the Rings Boxed Set",
+            "author": "J. R. R. Tolkien",
+            "synopsis": "Boxed gift set of Tolkien's classic masterpieces.",
+            "price": "7,200.29",
+            "image": "lotr.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 3,
+            "title": "George R. R. Martin's A Game of Thrones 5-Book Boxed Set",
+            "author": "George R. R. Martin",
+            "synopsis": "Perfect for fans of HBO's Game of Thrones--a boxed set featuring the first five novels!",
+            "price": "4,009.11",
+            "image": "got.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 4,
+            "title": "The Way of Kings",
+            "author": "Brandon Sanderson",
+            "synopsis": "Book One of the Stormlight Archive, begins an incredible new saga of epic proportion.",
+            "price": "798.73",
+            "image": "way.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 5,
+            "title": "The Girl Who Fell Beneath the Sea",
+            "author": "Axie Oh",
+            "synopsis": "Don't chase fate. Let fate chase you.",
+            "price": "1,139.45",
+            "image": "beneath.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 6,
+            "title": "Fantasy in Death",
+            "author": "J. D. Robb",
+            "synopsis": "In this thriller, it's game over for the criminals who cross Lieutenant Eve Dallas as she investigates the murder of a virtual reality wunderkind.",
+            "price": "622.33",
+            "image": "fantasy.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 7,
+            "title": "Jade City",
+            "author": "Fonda Lee",
+            "synopsis": "Jade City is an epic tale of blood, family, honour, and of those who live and die by ancient laws in a changing world.",
+            "price": "772.94",
+            "image": "jade.jpg",
+            "pdf": "ml312raa.pdf"
+        },
+        {
+            "id": 8,
+            "title": "House of Sky and Breath",
+            "author": "Sarah J. Maas",
+            "synopsis": "In this sexy, action-packed sequel to the #1 bestseller House of Earth and Blood, Sarah J. Maas weaves a captivating story of a world about to explode.",
+            "price": "1,622.66",
+            "image": "house.jpg",
+            "pdf": "ml312raa.pdf"
+        }
+    ]
+}

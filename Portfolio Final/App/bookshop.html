@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookShop</title>
+    <link rel="icon" href="img/book.ico" type="icon" />
+    <link rel="stylesheet" href="cart-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="flex">
+      <div class="nav-container">
+        <ul class="flex justify_align left">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a id="categories" href="#">Shop by Category</a>
+            <div class="dropdown-content">
+              <a href="classics.html">Classics</a>
+              <a href="romance.html">Romance</a>
+              <a href="fantasy.html">Fantasy</a>
+              <a href="science_fiction.html">Science Fiction</a>
+            </div>
+          </li>
+          <li><a href="bookshop.html">BookShop</a></li>
+        </ul>
+      </div>
+      <div class="nav-container right">
+        <ul class="flex right">
+          <li><a id="addcart" href="#">Cart</a></li>
+          <li><a class="logout" href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Add to Cart-->
+    <div id="add-cart-container">
+      <div class="modaltopContent">
+        <span>Your Cart</span><br />
+        <span style="font-size: 15px"
+          ><em>(5 books limit only due to demand)</em></span
+        >
+      </div>
+      <div class="modalContent">
+        <hr />
+        <table class="table">
+          <thead class="">
+            <tr>
+              <th rowspan="2" scope="col">Order</th>
+              <th rowspan="2" scope="col">Price</th>
+              <th class="empty"></th>
+            </tr>
+          </thead>
+          <tbody class="tableBody">
+            <tr>
+              <th><br /></th>
+              <th><br /></th>
+            </tr>
+            <tr>
+              <th class="thName1"></th>
+              <th class="thPrice1" id="initial-price"></th>
+              <th class="empty1"></th>
+            </tr>
+            <tr>
+              <th class="thName2"></th>
+              <th class="thPrice2" id="initial-price"></th>
+              <th class="empty2"></th>
+            </tr>
+            <tr>
+              <th class="thName3"></th>
+              <th class="thPrice3" id="initial-price"></th>
+              <th class="empty3"></th>
+            </tr>
+            <tr>
+              <th class="thName4"></th>
+              <th class="thPrice4" id="initial-price"></th>
+              <th class="empty4"></th>
+            </tr>
+            <tr>
+              <th class="thName5"></th>
+              <th class="thPrice5" id="initial-price"></th>
+              <th class="empty5"></th>
+            </tr>
+          </tbody>
+
+          <thead data-test="table-foot"></thead>
+        </table>
+      </div>
+      <div class="modalFooter">
+        <div class="leftFooter">
+          <h5 class="total">Total: ₱ 0</h5>
+        </div>
+        <div class="rightFooter">
+          <button class="btncon btn-primary" type="submit">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Bestseller page-->
+    <div class="bestseller-text">
+      <h1>BookShop</h1>
+    </div>
+
+    <!--Bestseller side bar images and main content-->
+    <div class="bestseller-container flex">
+      <div class="side-bar"></div>
+      <div class="main-content">
+        <div id="first-row" class="bestsellers-row up flex"></div>
+        <div id="second-row" class="bestsellers-row down flex"></div>
+      </div>
+      <div class="side-bar"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: "assets/bestseller.json",
+          type: "GET",
+          success: function (response) {
+            if (parseInt(response.status) == 200) {
+              const books = response.books;
+              let column1 = "";
+              let column2 = "";
+              for (let i = 0; i <= 3; i++) {
+                column1 = `${column1}<div class="bestsellers-column">`;
+                column1 = `${column1}<div class="bestseller-mini">`;
+                column1 = `${column1}<div class="flex">`;
+                column1 = `${column1}<p class="font-20">${books[i].id}.</p>`;
+                column1 = `${column1}<div class="flex justify_align">`;
+                column1 = `${column1}<img id="book-img" src="img/bs/${books[i].image}">`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}<p id="title" class="font-20">${books[i].title}</p>`;
+                column1 = `${column1}<p id="author">${books[i].author}</p>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}<div class="bestseller-mini">`;
+                column1 = `${column1}<p id="synopsis">${books[i].synopsis}</p>`;
+                column1 = `${column1}<p id="price" class="font">₱ ${books[i].price}</p>`;
+                column1 = `${column1}<button class="btn">Add to Cart</button>`;
+                column1 = `${column1}</div>`;
+                column1 = `${column1}</div>`;
+              }
+              $("#first-row").append(column1);
+
+              for (let i = 4; i < books.length; i++) {
+                column2 = `${column2}<div class="bestsellers-column">`;
+                column2 = `${column2}<div class="bestseller-mini">`;
+                column2 = `${column2}<div class="flex">`;
+                column2 = `${column2}<p class="font-20">${books[i].id}.</p>`;
+                column2 = `${column2}<div class="flex justify_align">`;
+                column2 = `${column2}<img id="book-img" src="img/bs/${books[i].image}">`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}<p id="title" class="font-20">${books[i].title}</p>`;
+                column2 = `${column2}<p id="author">${books[i].author}</p>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}<div class="bestseller-mini">`;
+                column2 = `${column2}<p id="synopsis">${books[i].synopsis}</p>`;
+                column2 = `${column2}<p id="price" class="font">₱ ${books[i].price}</p>`;
+                column2 = `${column2}<button class="btn">Add to Cart</button>`;
+                column2 = `${column2}</div>`;
+                column2 = `${column2}</div>`;
+              }
+              $("#second-row").append(column2);
+
+              $("#addcart").click(function () {
+                $("#add-cart-container").toggle("slow", function () {});
+              });
+              console.log("hello");
+              let total = 0;
+              let remBtn1 = $("th.empty1")
+                .append(`<button class="removeItem">X</button>`)
+                .hide();
+              let remBtn2 = $("th.empty2")
+                .append(`<button class="removeItem">X</button>`)
+                .hide();
+              let remBtn3 = $("th.empty3")
+                .append(`<button class="removeItem">X</button>`)
+                .hide();
+              let remBtn4 = $("th.empty4")
+                .append(`<button class="removeItem">X</button>`)
+                .hide();
+              let remBtn5 = $("th.empty5")
+                .append(`<button class="removeItem">X</button>`)
+                .hide();
+              $(".thPrice1").text(`₱ 0`).hide();
+              $(".thPrice2").text(`₱ 0`).hide();
+              $(".thPrice3").text(`₱ 0`).hide();
+              $(".thPrice4").text(`₱ 0`).hide();
+              $(".thPrice5").text(`₱ 0`).hide();
+
+              //add to cart: 5 books limit, main page is referenced
+              $("button.btn").click(function (e) {
+                let titleClicked =
+                  e.target.parentElement.parentElement.children[0].children[1]
+                    .textContent;
+                let priceClicked =
+                  e.target.parentElement.children[1].textContent;
+                let itemNumber = 0;
+
+                if ($(".thName1").text() === "") {
+                  itemNumber = 1;
+                  showAlways(itemNumber, titleClicked, priceClicked);
+                  remBtn1.show();
+                  addTotal();
+                } else if ($(".thName2").text() === "") {
+                  itemNumber = 2;
+                  showAlways(itemNumber, titleClicked, priceClicked);
+                  remBtn2.show();
+                  addTotal();
+                } else if ($(".thName3").text() === "") {
+                  itemNumber = 3;
+                  showAlways(itemNumber, titleClicked, priceClicked);
+                  remBtn3.show();
+                  addTotal();
+                } else if ($(".thName4").text() === "") {
+                  itemNumber = 4;
+                  showAlways(itemNumber, titleClicked, priceClicked);
+                  remBtn4.show();
+                  addTotal();
+                } else if ($(".thName5").text() === "") {
+                  itemNumber = 5;
+                  showAlways(itemNumber, titleClicked, priceClicked);
+                  remBtn5.show();
+                  addTotal();
+                }
+              });
+
+              //store and show items in cart
+              function showAlways(number, title, price) {
+                window.localStorage.setItem("title" + number, title);
+                window.localStorage.setItem("price" + number, price);
+                $(".thName" + number).text(
+                  window.localStorage.getItem("title" + number)
+                );
+                $(".thPrice" + number)
+                  .text(window.localStorage.getItem("price" + number))
+                  .show();
+              }
+
+              //remove item from cart, cart is referenced
+              $("button.removeItem").click(function (d) {
+                var clickedName =
+                  d.target.parentElement.parentElement.children[0].className;
+                var clickedPrice =
+                  d.target.parentElement.parentElement.children[1].className;
+                var curPrice = parseFloat(
+                  $("." + clickedPrice)
+                    .text()
+                    .replace("₱ ", "")
+                );
+                total = total - curPrice.toFixed(2);
+                $("h5.total").text(`Total: ₱ ` + Math.abs(total.toFixed(2)));
+                $("." + clickedName).text("");
+                $("." + clickedPrice)
+                  .text(0)
+                  .hide();
+                $("." + d.target.parentElement.className).hide();
+              });
+
+              //add total, cart is referenced
+              function addTotal() {
+                total =
+                  parseFloat($(".thPrice1").text().replace("₱ ", "")) +
+                  parseFloat($(".thPrice2").text().replace("₱ ", "")) +
+                  parseFloat($(".thPrice3").text().replace("₱ ", "")) +
+                  parseFloat($(".thPrice4").text().replace("₱ ", "")) +
+                  parseFloat($(".thPrice5").text().replace("₱ ", ""));
+                $("h5.total").text(`Total: ₱ ` + total.toFixed(2));
+                window.localStorage.setItem("tobepaid", total);
+              }
+
+              //confirm button
+              $("button.btncon").click(function () {
+                for (let i = 1; i <= 5; i++) {
+                  window.localStorage.setItem(
+                    "title" + i,
+                    $(".thName" + i).text()
+                  );
+                  window.localStorage.setItem(
+                    "price" + i,
+                    $(".thPrice" + i).text()
+                  );
+                }
+                window.localStorage.setItem("tobepaid", $(".total").text());
+                window.location.href = "confirmed_order.html";
+              });
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

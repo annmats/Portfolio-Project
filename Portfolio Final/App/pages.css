@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.bestseller-text {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: url(img/page_banner.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #FFF3E0;
+    padding-left: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #26A69A;
+    cursor: default;
+}
+
+.ebook-text {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: url(img/page_banner.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #FFF3E0;
+    padding-left: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #E74C3C;
+    cursor: default;
+}
+
+.bestseller-container {
+    position: relative;
+}
+
+.side-bar {
+    height: 80vh;
+    width: 10vw;
+}
+
+.main-content {
+    height: 80vh;
+    width: 80vw;
+}
+
+.bestsellers-column {
+    height: 40vh;
+    width: 20vw;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #B0BEC5;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.image-wrapper, .content-wrapper {
+    height: 50%;
+}
+
+#title {
+    padding-top: 10px;
+    font-weight: bold;
+    cursor: default;
+}
+
+#synopsis {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    cursor: default;
+}
+
+#price {
+    color: #26A69A;
+    cursor: default;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #26A69A;
+    color: #FFF;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btn-download {
+    padding: 5px;
+    background-color: #C0392B;
+    color: #FFF;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 50%;
+}
+
+#book-img {
+    width: 25%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1543px) { 
+    #synopsis {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 1224px) { 
+    #title, #author {
+        font-size: 15px;
+    }
+    .slideshow-container {
+        height: fit-content;
+    }
+}
+@media screen and (max-width: 1023px) { 
+    #synopsis {
+        padding: 0;
+    }
+}

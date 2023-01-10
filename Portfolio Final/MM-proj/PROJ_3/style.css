@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica';
+    margin: 50px 200px;
+}
+
+.instruction-wrapper {
+    padding: 50px;
+}
+
+.instruction {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.pad-20 {
+    padding: 20px 0;
+}
+
+.wrapper {
+    border: 1px solid #222;
+    padding: 20px;
+    background-color: #95A5A6;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+button {
+    width: 100px;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+}

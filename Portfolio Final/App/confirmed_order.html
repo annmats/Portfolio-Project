@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online BookStore</title>
+    <link rel="icon" href="img/book.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cart-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="confirmed_order">
+      <div class="login-wrapper">
+        <div class="login-container">
+          <div id="login-text">
+            <p id="online-text">ONLINE</p>
+            <p id="bookstore-text">BOOKSTORE</p>
+            <p id="aboutus-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laboriosam culpa cupiditate error explicabo sint expedita earum
+              ipsum eveniet, voluptate officiis.
+            </p>
+            <br />
+            <h3 style="text-align: center">Your Confirmed Order</h3>
+            <div class="receipt">
+              <p id="prod1" style="padding-right: 10px"></p>
+              <p></p>
+              <p id="pryc1" style="text-align: right"></p>
+            </div>
+            <div class="receipt">
+              <p id="prod2" style="padding-right: 10px"></p>
+              <p></p>
+              <p id="pryc2"></p>
+            </div>
+            <div class="receipt">
+              <p id="prod3" style="padding-right: 10px"></p>
+              <p></p>
+              <p id="pryc3"></p>
+            </div>
+            <div class="receipt">
+              <p id="prod4" style="padding-right: 10px"></p>
+              <p></p>
+              <p id="pryc4"></p>
+            </div>
+            <div class="receipt">
+              <p id="prod5" style="padding-right: 10px"></p>
+              <p></p>
+              <p id="pryc5" style="text-align: right"></p>
+            </div>
+            <hr />
+            <h4 id="totally" style="text-align: right"></h4>
+            <br />
+            <br />
+            <h2>Thank you for your purchase!</h2>
+            <br />
+            <br />
+            <br />
+            <br />
+            <button class="goBack btn">Go back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        for (let i = 1; i <= 5; i++) {
+          if (window.localStorage.getItem("title" + i) !== "") {
+            $("#prod" + i).text(window.localStorage.getItem("title" + i) + ":");
+            $("#pryc" + i).text(window.localStorage.getItem("price" + i));
+          }
+        }
+        let payThis = window.localStorage.getItem("tobepaid");
+        $("#totally").text(payThis);
+
+        $(".goBack").click(function () {
+          window.location.href = "bookshop.html";
+        });
+      });
+    </script>
+  </body>
+</html>

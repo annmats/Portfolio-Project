@@ -1,0 +1,36 @@
+{
+    "status": 200,
+    "data": 
+    [
+        {
+            "firstName": "Jethro",
+            "lastName": "Carreon",
+            "job": "Electronics Engineer & Web Developer"
+        },
+        {
+            "firstName": "Mary Ann",
+            "lastName": "Matuguina",
+            "job": "UX/UI Designer & Web Developer"
+        }
+    ],
+
+    "skills": 
+    [
+        {
+            "software": "Wordpress",
+            "level": 100
+        },
+        {
+            "software": "HTML",
+            "level": 75
+        },
+        {
+            "software": "CSS",
+            "level": 50
+        },
+        {
+            "software": "JavaScript",
+            "level": 25
+        }
+    ]
+}

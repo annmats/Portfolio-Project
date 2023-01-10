@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: transparent;
+    min-width: 850px;
+}
+
+/*contents styling */
+/*main style*/
+.center {
+    display: flex;
+    justify-content: center;   
+}
+.align {
+    text-align: center;
+    align-items: center;
+}
+.inLine {
+    display: inline-block;
+    text-align: left;
+}
+.right {
+    text-align: right;
+    margin-right: 20px;
+}
+.left {
+    text-align: left;
+    margin-left: 20px;
+}
+.top {
+    margin-top: 20px;
+}
+.justify {
+    text-align: justify;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+.def-cursor {
+    cursor: default;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.relative {
+    background-attachment: relative;
+    background-size: cover;
+}
+.resize-50 {
+    width: 50px;
+    height: auto;
+    padding-top: 5px;
+}
+.resize-75 {
+    width: 75px;
+    height: auto;
+}
+.h-30 {
+    height: 30%;
+}
+.h-40 {
+    height:40%;
+}
+.h-100 {
+    height: 100%;
+}
+.vh-50 {
+    height: 50vh;
+}
+.vh-75 {
+    height: 75vh;
+}
+.vh-100 {
+    height: 100vh;
+}
+.w-100 {
+    width: 100%;
+}
+.wh-100 {
+    width: 100vw;
+}
+/*end main style*/
+
+/*Welcome Style*/
+.welcome {
+    background-image: url("img/pexels-aleksandar-pasaric-1758672.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.welcome-word {
+    width: 20%;
+}
+.main-container {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+}
+.container {
+    padding: 20px;
+}
+.wrapper .container img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+.btn-welcome {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+}
+.btn-welcome:hover {
+    opacity: 50%;
+}
+/*end Welcome Style*/
+
+/*nav style*/
+nav {
+    width: 100%;
+    background-image:  transparent;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    padding: 0 20px;
+}
+nav#navigation ul li {
+    list-style-type: none;
+    font-size: 22px; 
+}
+nav#navigation ul li a.nav-anchor {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+nav#navigation ul li a.nav-anchor:hover {
+    color: #04f86a;
+}
+/*end nav style*/
+
+/*Home style*/
+section#home div.header-name {
+    padding-top: 160px;
+    padding-bottom: 90px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+section#home div.header-name div.header-job-title {
+    font-size: 20px;
+}
+section#home div.box-container {
+    width: 680px;
+    height: 500px;
+    background-color: #34495E;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+section#home div.box-container div.header-paragraph {
+    margin: 50px 0;
+    color: white;
+    padding: 50px;
+}
+section#home div.header-paragraph div.header-description {
+    line-height: 30px;
+    margin: 60px auto;
+}
+section#home div.header-paragraph div.header-resume button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #04f86a;
+    font-size: 15px;
+    cursor: pointer;
+}
+section#home div.header-paragraph div.header-resume button:hover {
+    background-color: #04f86a;
+    color: white;
+    transition: 0.25s;
+}
+/*end Home style*/
+
+/*Professional style*/
+section#professional {
+    padding-top: 200px;
+    padding-bottom: 130px;
+    color: white;
+}
+section#professional div.skills {
+    margin: 0 auto;
+    max-width: 100vw;
+    width: 100%;
+}
+.title-font {
+    font-size: 50px;
+    font-weight: 700;
+}
+.description-font {
+    font-size: 25px;
+    margin: 10px 0;
+}
+.skills-bar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.skills-name {
+    font-size: 18px;
+    width: 20%;
+    justify-content: end;
+}
+.bar-green {
+    height: auto;
+    background-color: #25d36e;
+    width: 80%;
+}
+.skills-percentage {
+    width: 0%;
+    margin-left: 5px;
+}
+.l-100 {
+    width: 500px;
+}
+.l-75 {
+    width: 375px;
+}
+.l-50 {
+    width: 250px;
+}
+.l-25 {
+    width: 125px;
+}
+/*end Professional style*/
+
+/*Projects style*/
+section#projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+section#projects div.projects-container {
+    margin: 0 auto;
+    width: 100%;
+}
+section#projects div.projects-container div.projects-image img {
+    width: 50%;
+    height: 100%;
+}
+section#projects div.projects-container div.projects-image img:hover {
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+section#projects div.projects-container div.projects-image ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+}
+section#projects div.projects-container div.projects-image ul li {
+    width: 50%;   
+}
+section#projects div.projects-container div.projects-image ul a.nav-anchor {
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+}
+/*end Projects style*/
+
+/*Experience style*/
+section#experience {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+section#experience div.exp-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+section#experience div.exp-container div.experience-main{
+    width: 680px;
+    margin: 0 auto;
+}
+.experience-container {
+    margin: 40px auto;
+    text-align: justify;
+}
+/*end Experience style*/
+
+/*Contacts style*/
+section#contact {
+    padding-top: 50px;
+    color: white;
+}
+section#contact div.last-box-container {
+    max-width: 680px;
+    max-height: 700px;
+    padding-bottom: 50px;;
+    width: 100%;
+    height: 100%;
+    background-color: #34495E;
+    margin: 100px auto;
+}
+div#contact-content {
+    padding: 80px;
+}
+div#contact-container div#contact-content form div.parent {
+    display: flex;
+    margin: 0 auto;
+}
+.child {
+    margin: 0 10px;
+    margin-right: 0;
+    width: 50%;
+    color: white;
+}
+p.contact-title {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+p.contact-subtitle {
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+.contact-input-area {
+    display: block;
+}
+div.child div.contact-input-area #text {
+    padding: 10px 0;
+    margin: 5px 0;
+    text-indent: 5px;
+    width: calc(100% - 20px) !important;
+}
+textarea.contact-text-message {
+    height: 120px;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-indent: 5px;
+    width: calc(100% - 18px) !important;
+}
+.contact-button {
+    padding: 10px 10px;
+    margin: 5px 0;
+    width: 100%;
+    width: calc(100% - 16px) !important;
+    background-color: #04f86a;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.contact-button:hover {
+    background-color: #34495E;
+    transition: 0.25s;
+}
+div#socials-container img#socials{
+    margin-right: 10px;
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover;
+}
+/*end Contacts style*/
+
+/*BACKGROUND STYLE*/
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+.filtered {
+    filter: brightness(75%);
+    opacity: 10;
+}
+div#bg-designs {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    max-width: 100vw;
+    min-width: 850px;
+    width: 100%;
+}
+.img1 {
+    background-image: url(img/woman.jpg);
+    background-position: right;
+}
+.img2 {
+    background-image: url(img/bg-2.jpg);
+}
+.img3 {
+    background-image: url("https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_1248,h_2909,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2000px;
+}
+.img4 {
+    background-image: url(img/bg-3.jpg);
+}
+.img5 {
+    background-image: url(img/wallpaper.jpg);
+    background-position: right;
+}
+/*BACKGROUND STYLE END*/
+#footer {
+    height: 15vh;
+    color: white;
+    background-color: #9E9E9E;
+    z-index: 2;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .parallax {
+        background-attachment:scroll;
+        background-size: cover;
+    }
+    section#projects {
+        padding-top: 150px;
+    }
+    section#experience {
+        padding-top: 150px;
+    }
+}
+@media screen and (max-height: 850px) {
+    .img3 {
+        height: 2500px;
+    }
+    section#projects {
+        padding-top: 150px;
+    }
+    section#experience {
+        padding-top: 150px;
+    }
+}
